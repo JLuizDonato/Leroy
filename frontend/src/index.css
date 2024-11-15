@@ -1,0 +1,52 @@
+body {
+  background-color: #dfd3cf;
+  margin: 0;
+  font-family: 'Bodoni', serif; /* Fonte para o texto principal */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+/* Ajustes de layout para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  .nav, .footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar-link {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+/* Ajustes para desktops */
+@media (min-width: 1025px) {
+  .navbar-link {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+code {
+  font-family: 'Bodoni', serif; /* Fonte para o texto principal */
+}
